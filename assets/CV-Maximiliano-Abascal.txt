@@ -1,0 +1,43 @@
+Maximiliano Esteban Abascal Fredes
+Contacto: +56 9 8446 7842 | maximiliano_abascal_fredes@hotmail.com
+
+Perfil
+Estudiante de Ingeniería Civil en Informática y Telecomunicaciones en la Universidad Diego Portales. Colaborador, resiliente, creativo e ingenioso, con fuerte motivación por aprender y desarrollar nuevas habilidades.
+
+Educación
+Universidad Diego Portales — Ingeniería Civil en Informática y Telecomunicaciones (5.º año, en curso)
+Google Cloud: Essential Google Cloud Infrastructure: Foundation; Google Cloud Fundamentals: Core Infrastructure
+
+Habilidades
+Programación: Python, C#, C++, ReactJS, VHDL
+Ciencia de datos: Pandas, Scikit-Learn, Matplotlib, Seaborn
+Redes y ciberseguridad: Wireshark, BurpSuite
+Herramientas: Git, Modelado y análisis de datos
+
+Idiomas
+Inglés — Avanzado
+
+Intereses
+Desarrollo IoT
+
+Experiencia Laboral
+- Diseñador de tour virtual 360° — AD Audiovisual y Diseño SPA (2019)
+  Construcción y ajustes de recorridos virtuales en formato 360°.
+
+- Primera práctica – Desarrollo Web — WitI SPA (Verano 2022)
+  Diseño y desarrollo funcional de barra de navegación en ReactJS. Colaboración en tareas de desarrollo.
+
+- Consultoría en telecomunicaciones – Proyecto Codelco — Kreativer / AD Audiovisual (2023)
+  Evaluación, edición y consultoría de modelo de telecomunicaciones por radio. Proyecto asociado a implementación para Codelco.
+
+- Desarrollador Full Stack — Proyecto Vasoli (En progreso)
+  Diseño, construcción y puesta en marcha de plataforma para empresa de adquisición y gestión de sitios para antenas móviles.
+
+- Proyecto de optimización portuaria — Comex Logistics (En progreso)
+  Optimización de calendarización y atraque de naves en terminales del Puerto de San Antonio.
+
+Servicios adicionales
+- Mejora de CV para mercado internacional
+- Versión optimizada para ATS
+- Versión profesional en inglés
+- Incluir proyecto Arcovid como logro relevante
