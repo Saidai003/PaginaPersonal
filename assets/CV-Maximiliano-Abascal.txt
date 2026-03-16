@@ -36,9 +36,7 @@ Experiencia Laboral
 - Proyecto de optimización portuaria — Comex Logistics (En progreso)
   Optimización de calendarización y atraque de naves en terminales del Puerto de San Antonio.
 
-Servicios adicionales
-- Mejora de CV para mercado internacional
-- Versión optimizada para ATS
-- Versión profesional en inglés
-- Incluir proyecto Arcovid como logro relevante (Ganador 1.º lugar — concurso de creación de videojuegos en Scratch organizado por Anglo American)
-- Creación del juego de mesa "Catacumba" — juego físico competitivo para 2 a 4 jugadores con mecánicas innovadoras
+Servicios profesionales
+- Servicios principales (experiencia sólida): Desarrollo de videojuegos en Unity (desarrollador junior), Python (scripting y análisis), React (frontend), C++ y C#.
+- Servicios con experiencia práctica: Edición y automatización de video, actuación y voz en off (doblaje), dibujo y creación artística, modelado y rigging básico en Blender.
+- Otros servicios: Mejora de CV para mercado internacional, optimización ATS y versión profesional en inglés.
