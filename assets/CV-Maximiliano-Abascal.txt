@@ -27,7 +27,7 @@ Experiencia Laboral
 - Primera práctica – Desarrollo Web — WitI SPA (Verano 2022)
   Diseño y desarrollo funcional de barra de navegación en ReactJS. Colaboración en tareas de desarrollo.
 
-- Consultoría en telecomunicaciones – Proyecto Codelco — Kreativer / AD Audiovisual (2023)
+- Consultoría en telecomunicaciones – Proyecto Codelco — Kreativer / Katcam (2023)
   Evaluación, edición y consultoría de modelo de telecomunicaciones por radio. Proyecto asociado a implementación para Codelco.
 
 - Desarrollador Full Stack — Proyecto Vasoli (En progreso)
@@ -40,4 +40,5 @@ Servicios adicionales
 - Mejora de CV para mercado internacional
 - Versión optimizada para ATS
 - Versión profesional en inglés
-- Incluir proyecto Arcovid como logro relevante
+- Incluir proyecto Arcovid como logro relevante (Ganador 1.º lugar — concurso de creación de videojuegos en Scratch organizado por Anglo American)
+- Creación del juego de mesa "Catacumba" — juego físico competitivo para 2 a 4 jugadores con mecánicas innovadoras
