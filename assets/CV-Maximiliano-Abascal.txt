@@ -27,6 +27,9 @@ Experiencia Laboral
 - Primera práctica – Desarrollo Web — WitI SPA (Verano 2022)
   Diseño y desarrollo funcional de barra de navegación en ReactJS. Colaboración en tareas de desarrollo.
 
+- Desarrollo en equipo de guía estudiantil — Universidad Diego Portales (Scrum Developer) (2022)
+  Participación como Scrum Developer en el desarrollo de una guía estudiantil para la universidad, aplicando metodología Scrum y entregando documentación y entregables iterativos.
+
 - Consultoría en telecomunicaciones – Proyecto Codelco — Kreativer / Katcam (2023)
   Evaluación, edición y consultoría de modelo de telecomunicaciones por radio. Proyecto asociado a implementación para Codelco.
 
