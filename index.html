@@ -25,6 +25,7 @@
         </div>
         <div class="header-actions">
             <a href="mailto:maximiliano_abascal_fredes@hotmail.com" class="btn">Contactar</a>
+            <button id="exportCsv" class="btn">Exportar CSV</button>
             <button id="toggleTheme" class="icon">🌙</button>
             <button id="toggleAdminBtn" class="icon">⚙</button>
         </div>
@@ -214,6 +215,14 @@ function bindAdmin(){
         store.about = document.getElementById('editAbout').value; document.getElementById('aboutText').innerText = store.about; saveStore();
     });
 
+    // Export CSV button
+    const exportBtn = document.getElementById('exportCsv');
+    if(exportBtn){
+        exportBtn.addEventListener('click', ()=>{
+            exportCSV();
+        });
+    }
+
     document.getElementById('addProject').addEventListener('click', ()=>{
         const p = { title: pTitle.value, date: pDate.value, status: pStatus.value, desc: pDesc.value, link: pLink.value };
         store.projects.push(p); saveStore(); renderProjects();
@@ -228,6 +237,50 @@ function bindAdmin(){
 }
 
 // Inicializar
+    // Exportar datos relevantes a CSV (experiencia, proyectos, contacto, habilidades)
+    function exportCSV(){
+        const rows = [];
+        rows.push(["Category","Title","Date","Status","Description","Link"]);
+
+        if(store.contact){
+            rows.push(["Contact","Phone: " + (store.contact.phone||""), "", "", "Email: " + (store.contact.email||""), ""]);
+        }
+
+        if(store.skills && store.skills.length){
+            rows.push(["Skills", store.skills.join('; '), "", "", "", ""]);
+        }
+
+        if(store.experience && store.experience.length){
+            store.experience.forEach(e => {
+                rows.push(["Experience", e.title || "", e.date || "", "", (e.desc||"").replace(/\n/g,' '), ""]);
+            });
+        }
+
+        if(store.projects && store.projects.length){
+            store.projects.forEach(p => {
+                rows.push(["Project", p.title || "", p.date || "", p.status || "", (p.desc||"").replace(/\n/g,' '), p.link || ""]);
+            });
+        }
+
+        const csv = rows.map(r => r.map(field => '"' + String(field).replace(/"/g,'""') + '"').join(',')).join('\r\n');
+        const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        const now = new Date();
+        const fname = `portfolio_export_${now.getFullYear()}${String(now.getMonth()+1).padStart(2,'0')}${String(now.getDate()).padStart(2,'0')}.csv`;
+        if(navigator.msSaveBlob){
+            navigator.msSaveBlob(blob, fname);
+        } else {
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            link.setAttribute('href', url);
+            link.setAttribute('download', fname);
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(url);
+        }
+    }
+
 function init(){
     // populate initial about text
     if(!store.about || store.about.trim()==='') store.about = 'Estudiante de Ingeniería Civil en Informática y Telecomunicaciones, dispuesto a enfrentar nuevas experiencias laborales.';
