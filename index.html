@@ -154,8 +154,8 @@ const initialData = {
         { title: "Desarrollo de guía estudiantil — Universidad Diego Portales (Scrum Developer)", date: "2022", desc: "Trabajo en equipo para desarrollar una guía estudiantil aplicando metodología Scrum; participé como Scrum Developer." },
         { title: "Consultoría en telecomunicaciones – Proyecto Codelco — Kreativer / Katcam", date: "2023", desc: "Evaluación, edición y consultoría de modelo de telecomunicaciones por radio. Proyecto asociado a implementación para Codelco." },
         { title: "Segunda práctica profesional — Servitecno (Líder de proyecto)", date: "12/01/2026 - 20/02/2026", desc: "Levantamiento de requerimientos y diseño del proyecto 'Dashboard Analítico de Servitecno' para bancos — sistema de alertas de fallas/caídas. Supervisor: Óscar Palacios." },
-        { title: "Desarrollador Full Stack — Proyecto Vasoli (Completado)", date: "2026", desc: "Diseño, construcción y puesta en marcha de plataforma para gestión de sitios para antenas móviles. Estado: Completado." },
-        { title: "Proyecto de optimización portuaria — Comex Logistics (Completado)", date: "2026", desc: "Optimización de calendarización y atraque de naves en terminales del Puerto de San Antonio. Estado: Completado." }
+        { title: "Desarrollador Full Stack — Proyecto Vasoli (Completado)", date: "Sep 2025 - Dec 2025", desc: "Diseño, construcción y puesta en marcha de plataforma para gestión de sitios para antenas móviles. Estado: Completado. (Inicio: Septiembre 2025, Término: Diciembre 2025)" },
+        { title: "Proyecto de optimización portuaria — Comex Logistics (Completado)", date: "Aug 2025 - Dec 2025", desc: "Optimización de calendarización y atraque de naves en terminales del Puerto de San Antonio. Estado: Completado. (Inicio: Agosto 2025, Término: Diciembre 2025)" }
     ],
     projects: [
         { title: "Arcovid — Juego educativo (Scratch)", date: "2020", status: "Completado", desc: "Juego educativo creado para competencia; ganador (1.º lugar) del concurso de creación de videojuegos en Scratch organizado por Anglo American.", link: "https://scratch.mit.edu/projects/406367145/" },
@@ -201,7 +201,7 @@ function bindAdmin(){
     document.getElementById('toggleTheme').addEventListener('click',()=>{document.body.classList.toggle('dark'); localStorage.setItem('dark', document.body.classList.contains('dark'))});
     document.getElementById('toggleAdminBtn').addEventListener('click',()=>{
         const pass = prompt('Ingrese la contraseña para modo edición:');
-        const stored = localStorage.getItem('admin_password') || 'admin123';
+        const stored = localStorage.getItem('admin_password') || 'editar003';
         if(pass === null) return; // cancel
         if(pass === stored){
             document.getElementById('adminPanel').classList.toggle('open');

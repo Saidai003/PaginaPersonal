@@ -40,11 +40,11 @@ Experiencia Laboral
 - Segunda práctica profesional — Servitecno (12/01/2026 - 20/02/2026)
   Levantamiento de requerimientos y diseño del proyecto "Dashboard Analítico de Servitecno" para bancos — sistema de alertas de fallas o caídas de sistemas. Supervisor: Óscar Palacios.
 
-- Desarrollador Full Stack — Proyecto Vasoli (Completado)
-  Diseño, construcción y puesta en marcha de plataforma para empresa de adquisición y gestión de sitios para antenas móviles. Estado: Completado.
+- Desarrollador Full Stack — Proyecto Vasoli (Completado) (Sep 2025 - Dic 2025)
+  Diseño, construcción y puesta en marcha de plataforma para empresa de adquisición y gestión de sitios para antenas móviles. Estado: Completado. (Inicio: Septiembre 2025 — Término: Diciembre 2025)
 
-- Proyecto de optimización portuaria — Comex Logistics (Completado)
-  Optimización de calendarización y atraque de naves en terminales del Puerto de San Antonio. Estado: Completado.
+- Proyecto de optimización portuaria — Comex Logistics (Completado) (Aug 2025 - Dic 2025)
+  Optimización de calendarización y atraque de naves en terminales del Puerto de San Antonio. Estado: Completado. (Inicio: Agosto 2025 — Término: Diciembre 2025)
 
 Servicios profesionales
 - Servicios principales (experiencia sólida): Desarrollo de videojuegos en Unity (desarrollador junior), Python (scripting y análisis), React (frontend), C++ y C#.
