@@ -183,7 +183,7 @@ function renderExperience(){
     const c = document.getElementById('experienceContainer'); c.innerHTML='';
     store.experience.forEach((e, i)=>{
         const card = document.createElement('div'); card.className='item';
-        card.innerHTML = `<strong>${e.title}</strong><div class="meta">${e.date}</div><p>${e.desc}</p><button class="small" data-i="${i}">Eliminar</button>`;
+        card.innerHTML = `<strong>${e.title}</strong><div class="meta">${e.date}</div><p>${e.desc}</p>`;
         c.appendChild(card);
     });
 }
@@ -192,14 +192,23 @@ function renderProjects(){
     const c = document.getElementById('projectsContainer'); c.innerHTML='';
     store.projects.forEach((p,i)=>{
         const card = document.createElement('div'); card.className='card project';
-        card.innerHTML = `<h4>${p.title}</h4><div class="meta">${p.date} · <span class="muted">${p.status}</span></div><p>${p.desc}</p>${p.link?`<a href="${p.link}" target="_blank">Ver</a>`:''}<br><button class="small" data-p="${i}">Eliminar</button>`;
+        card.innerHTML = `<h4>${p.title}</h4><div class="meta">${p.date} · <span class="muted">${p.status}</span></div><p>${p.desc}</p>${p.link?`<a href="${p.link}" target="_blank">Ver</a>`:''}`;
         c.appendChild(card);
     });
 }
 
 function bindAdmin(){
     document.getElementById('toggleTheme').addEventListener('click',()=>{document.body.classList.toggle('dark'); localStorage.setItem('dark', document.body.classList.contains('dark'))});
-    document.getElementById('toggleAdminBtn').addEventListener('click',()=>{document.getElementById('adminPanel').classList.toggle('open')});
+    document.getElementById('toggleAdminBtn').addEventListener('click',()=>{
+        const pass = prompt('Ingrese la contraseña para modo edición:');
+        const stored = localStorage.getItem('admin_password') || 'admin123';
+        if(pass === null) return; // cancel
+        if(pass === stored){
+            document.getElementById('adminPanel').classList.toggle('open');
+        } else {
+            alert('Contraseña incorrecta');
+        }
+    });
 
     document.getElementById('saveAbout').addEventListener('click', ()=>{
         store.about = document.getElementById('editAbout').value; document.getElementById('aboutText').innerText = store.about; saveStore();
@@ -215,15 +224,7 @@ function bindAdmin(){
         store.experience.push(e); saveStore(); renderExperience();
     });
 
-    // Delegation for delete buttons
-    document.addEventListener('click', (ev)=>{
-        if(ev.target.matches('button[data-i]')){
-            const i = +ev.target.dataset.i; store.experience.splice(i,1); saveStore(); renderExperience();
-        }
-        if(ev.target.matches('button[data-p]')){
-            const i = +ev.target.dataset.p; store.projects.splice(i,1); saveStore(); renderProjects();
-        }
-    });
+    // No delete buttons in UI; editing is available via the admin panel (protected by contraseña)
 }
 
 // Inicializar
