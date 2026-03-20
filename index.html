@@ -44,7 +44,7 @@
 
         <section class="card">
             <h3 data-i18n="education">Education</h3>
-            <p><strong>Universidad Diego Portales</strong><br>Ingeniería Civil en Informática y Telecomunicaciones — 5.º año (en curso)</p>
+            <p data-i18n="education_details"><strong>Universidad Diego Portales</strong><br>Ingeniería Civil en Informática y Telecomunicaciones — 5.º año (en curso)</p>
             <h4>Google Cloud</h4>
             <ul class="compact">
                 <li>Essential Google Cloud Infrastructure: Foundation</li>
@@ -88,22 +88,22 @@
 
                 <div class="tab-content" id="tab-servicios" style="display:none">
                     <h2 data-i18n="services">Services / Extras</h2>
-                    <p class="muted">I offer a range of services at different experience levels: some with solid expertise and others with practical experience and demonstrable results.</p>
+                    <p class="muted" data-i18n="services_intro">I offer a range of services at different experience levels: some with solid expertise and others with practical experience and demonstrable results.</p>
                     <ul>
-                        <li><strong>Servicios principales (experiencia sólida):</strong>
+                        <li><strong data-i18n="services_main_heading">Main services (solid experience):</strong>
                             <ul class="compact">
-                                <li>Desarrollo de videojuegos en Unity — desarrollador junior con proyectos completados</li>
-                                <li>Programación en Python — scripting, automatización y análisis de datos</li>
-                                <li>Desarrollo frontend con React — aplicaciones interactivas</li>
-                                <li>Programación en C++ y C# — herramientas y aplicaciones</li>
+                                <li data-i18n="services_game_dev">Game development in Unity — junior developer with completed projects</li>
+                                <li data-i18n="services_python">Python programming — scripting, automation and data analysis</li>
+                                <li data-i18n="services_react">Frontend development with React — interactive applications</li>
+                                <li data-i18n="services_cpp_csharp">Programming in C++ and C# — tools and applications</li>
                             </ul>
                         </li>
-                        <li><strong>Servicios adicionales (experiencia práctica):</strong>
+                        <li><strong data-i18n="services_additional_heading">Additional services (practical experience):</strong>
                             <ul class="compact">
-                                <li>Edición de video y automatización de flujos de edición</li>
-                                <li>Actuación y voz en off — doblaje y narración</li>
-                                <li>Dibujo y creación artística</li>
-                                <li>Modelado y rigging básico en Blender — personajes sencillos</li>
+                                <li data-i18n="services_video_editing">Video editing and automation of editing workflows</li>
+                                <li data-i18n="services_voice">Acting and voice-over — dubbing and narration</li>
+                                <li data-i18n="services_art">Drawing and artistic creation</li>
+                                <li data-i18n="services_blender">Basic modeling and rigging in Blender — simple characters</li>
                             </ul>
                         </li>
                         <!-- Se eliminó la subsección de servicios relacionados con CV a petición del autor -->
@@ -118,27 +118,27 @@
 <div id="adminPanel" class="admin-panel">
     <div class="admin-grid container">
         <div>
-            <h3>Editar texto 'Sobre mí'</h3>
+            <h3 data-i18n="admin_edit_about_h3">Edit 'About' text</h3>
             <textarea id="editAbout" rows="4"></textarea>
-            <button id="saveAbout">Guardar</button>
+            <button id="saveAbout" data-i18n="save_about_button">Save</button>
         </div>
 
         <div>
-            <h3>Agregar proyecto</h3>
-            <input id="pTitle" placeholder="Título">
-            <input id="pDate" placeholder="Año / Fecha">
-            <input id="pStatus" placeholder="Estado (En progreso / Completado)">
-            <input id="pLink" placeholder="Enlace (opcional)">
-            <textarea id="pDesc" placeholder="Descripción"></textarea>
-            <button id="addProject">Agregar</button>
+            <h3 data-i18n="admin_add_project_h3">Add project</h3>
+            <input id="pTitle" placeholder="Title" data-i18n-placeholder="pTitle">
+            <input id="pDate" placeholder="Year / Date" data-i18n-placeholder="pDate">
+            <input id="pStatus" placeholder="Status (In progress / Completed)" data-i18n-placeholder="pStatus">
+            <input id="pLink" placeholder="Link (optional)" data-i18n-placeholder="pLink">
+            <textarea id="pDesc" placeholder="Description" data-i18n-placeholder="pDesc"></textarea>
+            <button id="addProject" data-i18n="add_project_button">Add</button>
         </div>
 
         <div>
-            <h3>Agregar experiencia</h3>
-            <input id="eTitle" placeholder="Cargo — Empresa">
-            <input id="eDate" placeholder="Año / Fecha">
-            <textarea id="eDesc" placeholder="Descripción"></textarea>
-            <button id="addExperience">Agregar</button>
+            <h3 data-i18n="admin_add_experience_h3">Add experience</h3>
+            <input id="eTitle" placeholder="Role — Company" data-i18n-placeholder="eTitle">
+            <input id="eDate" placeholder="Year / Date" data-i18n-placeholder="eDate">
+            <textarea id="eDesc" placeholder="Description" data-i18n-placeholder="eDesc"></textarea>
+            <button id="addExperience" data-i18n="add_experience_button">Add</button>
         </div>
     </div>
 </div>
@@ -166,6 +166,33 @@ const translations = {
         experience: 'Experience',
         projects: 'Projects & Achievements',
         services: 'Services / Extras'
+        ,
+        education_details: 'Universidad Diego Portales\nComputer and Telecommunications Engineering — 5th year (in progress)',
+        services_intro: 'I offer a range of services at different experience levels: some with solid expertise and others with practical experience and demonstrable results.',
+        services_main_heading: 'Main services (solid experience):',
+        services_game_dev: 'Game development in Unity — junior developer with completed projects',
+        services_python: 'Python programming — scripting, automation and data analysis',
+        services_react: 'Frontend development with React — interactive applications',
+        services_cpp_csharp: 'Programming in C++ and C# — tools and applications',
+        services_additional_heading: 'Additional services (practical experience):',
+        services_video_editing: 'Video editing and automation of editing workflows',
+        services_voice: 'Acting and voice-over — dubbing and narration',
+        services_art: 'Drawing and artistic creation',
+        services_blender: 'Basic modeling and rigging in Blender — simple characters',
+        admin_edit_about_h3: "Edit 'About' text",
+        save_about_button: 'Save',
+        admin_add_project_h3: 'Add project',
+        pTitle: 'Title',
+        pDate: 'Year / Date',
+        pStatus: 'Status (In progress / Completed)',
+        pLink: 'Link (optional)',
+        pDesc: 'Description',
+        add_project_button: 'Add',
+        admin_add_experience_h3: 'Add experience',
+        eTitle: 'Role — Company',
+        eDate: 'Year / Date',
+        eDesc: 'Description',
+        add_experience_button: 'Add'
     },
     es: {
         subtitle: 'Estudiante de Ingeniería Civil en Informática y Telecomunicaciones — Universidad Diego Portales',
@@ -185,19 +212,50 @@ const translations = {
         experience: 'Experiencia',
         projects: 'Proyectos & Logros',
         services: 'Servicios / Extras'
+        ,
+        education_details: 'Universidad Diego Portales\nIngeniería Civil en Informática y Telecomunicaciones — 5.º año (en curso)',
+        services_intro: 'Ofrezco una gama de servicios con distintos niveles de experiencia: algunos donde cuento con experiencia sólida y otros en los que tengo experiencia práctica y resultados demostrables.',
+        services_main_heading: 'Servicios principales (experiencia sólida):',
+        services_game_dev: 'Desarrollo de videojuegos en Unity — desarrollador junior con proyectos completados',
+        services_python: 'Programación en Python — scripting, automatización y análisis de datos',
+        services_react: 'Desarrollo frontend con React — aplicaciones interactivas',
+        services_cpp_csharp: 'Programación en C++ y C# — herramientas y aplicaciones',
+        services_additional_heading: 'Servicios adicionales (experiencia práctica):',
+        services_video_editing: 'Edición de video y automatización de flujos de edición',
+        services_voice: 'Actuación y voz en off — doblaje y narración',
+        services_art: 'Dibujo y creación artística',
+        services_blender: 'Modelado y rigging básico en Blender — personajes sencillos',
+        admin_edit_about_h3: "Editar texto 'Sobre mí'",
+        save_about_button: 'Guardar',
+        admin_add_project_h3: 'Agregar proyecto',
+        pTitle: 'Título',
+        pDate: 'Año / Fecha',
+        pStatus: 'Estado (En progreso / Completado)',
+        pLink: 'Enlace (opcional)',
+        pDesc: 'Descripción',
+        add_project_button: 'Agregar',
+        admin_add_experience_h3: 'Agregar experiencia',
+        eTitle: 'Cargo — Empresa',
+        eDate: 'Año / Fecha',
+        eDesc: 'Descripción',
+        add_experience_button: 'Agregar'
     }
 };
 
 function applyTranslations(lang){
+    // Apply text translations
     document.querySelectorAll('[data-i18n]').forEach(el=>{
         const key = el.dataset.i18n;
         const txt = translations[lang] && translations[lang][key];
         if(!txt) return;
-        if(el.placeholder !== undefined && el.tagName === 'INPUT'){
-            el.placeholder = txt;
-        } else {
-            el.innerText = txt;
-        }
+        el.innerText = txt;
+    });
+    // Apply placeholders (supports data-i18n-placeholder attribute)
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
+        const key = el.dataset.i18nPlaceholder;
+        const txt = translations[lang] && translations[lang][key];
+        if(!txt) return;
+        if('placeholder' in el) el.placeholder = txt;
     });
     document.documentElement.lang = lang;
     localStorage.setItem('site_lang', lang);
