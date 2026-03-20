@@ -3,7 +3,7 @@
 Este repositorio contiene una página estática (HTML/CSS/JS) pensada para mostrar tu perfil profesional, experiencia y proyectos. Es responsive, editable localmente y lista para desplegar en Vercel (Hobby).
 
 Archivos principales
-- [index.html](index.html#L1) — Página principal (contenido inicial en español).
+- [index.html](index.html#L1) — Main page (default language: English). Language toggle (EN/ES) available in the header.
 - [styles.css](styles.css#L1) — Estilos globales.
 - [assets/CV-Maximiliano-Abascal.txt](assets/CV-Maximiliano-Abascal.txt#L1) — CV descargable en texto.
 - [assets/avatar.svg](assets/avatar.svg#L1) — Avatar simple.
@@ -31,6 +31,6 @@ Notas
 - Evité integraciones de servidor (formularios, bases de datos) para mantener compatibilidad con el plan Hobby de Vercel.
 
 Si quieres, puedo:
-- Añadir soporte para múltiples idiomas (ES/EN) y cambiar el contenido dinámicamente.
+- Añadir soporte para múltiples idiomas (ES/EN) y cambiar el contenido dinámicamente. (Soporte básico implementado: el sitio carga en inglés por defecto y permite cambiar a español con el botón de idioma.)
 - Generar un PDF del CV y añadirlo como archivo descargable.
 - Subir al repositorio y configurar Vercel por ti (necesitaré acceso al repo o instrucciones).
